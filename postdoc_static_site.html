@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Alex Johnson</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <section class="text-center space-y-4">
+      <div class="flex flex-col items-center space-y-4">
+        <img src="profile.jpg" alt="Dr. Alex Johnson" class="w-32 h-32 rounded-full object-cover border-4 border-gray-300">
+        <h1 class="text-4xl font-bold">Dr. Alex Johnson</h1>
+        <p class="text-lg text-gray-600">Postdoctoral Researcher in Computational Biology at XYZ University</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="mailto:alex@example.com" class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i> Contact</a>
+          <a href="Alex_Johnson_CV.pdf" download class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Download CV</a>
+          <a href="#" class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="linkedin" class="w-4 h-4 mr-2"></i> LinkedIn</a>
+          <a href="#" class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="twitter" class="w-4 h-4 mr-2"></i> Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">About Me</h2>
+      <p>
+        I am a computational biologist with a strong interest in using data-driven
+        approaches to understand complex biological systems. My current research
+        focuses on transcriptomic analysis and machine learning applications in
+        genomics.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Publications</h2>
+      <ul class="space-y-2">
+        <li class="border rounded p-4">
+          Johnson, A. et al. (2024). "Machine learning approaches to gene expression analysis." <em>Bioinformatics Journal</em>.
+        </li>
+        <li class="border rounded p-4">
+          Johnson, A. et al. (2023). "Integrative transcriptomics in cancer research." <em>Nature Genetics</em>.
+        </li>
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Research Interests</h2>
+      <ul class="list-disc list-inside">
+        <li>Transcriptomics & Gene Regulation</li>
+        <li>Machine Learning in Biology</li>
+        <li>Cancer Genomics</li>
+        <li>Computational Method Development</li>
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Interactive Projects</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="border rounded p-4 space-y-2">
+          <h3 class="text-xl font-medium">Gene Expression Explorer</h3>
+          <p>Visualize gene expression across datasets using dynamic filtering and PCA plots.</p>
+          <a href="/projects/gene-expression" class="text-blue-600 inline-flex items-center">Launch App <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+        </div>
+        <div class="border rounded p-4 space-y-2">
+          <h3 class="text-xl font-medium">Cancer Pathway Mapper</h3>
+          <p>Interactive pathway analysis tool for cancer gene sets.</p>
+          <a href="/projects/cancer-mapper" class="text-blue-600 inline-flex items-center">Explore Tool <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Blog</h2>
+      <ul class="space-y-2">
+        <li class="border rounded p-4">
+          <h3 class="text-lg font-medium">How Machine Learning is Shaping Genomics</h3>
+          <p class="text-sm text-gray-600">June 10, 2025</p>
+          <p class="mt-2">An overview of recent trends in applying ML to biological datasets.</p>
+          <a href="/blog/ml-in-genomics" class="text-blue-600 inline-flex items-center">Read More <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+        </li>
+        <li class="border rounded p-4">
+          <h3 class="text-lg font-medium">Tips for Writing a Research Fellowship Proposal</h3>
+          <p class="text-sm text-gray-600">May 25, 2025</p>
+          <p class="mt-2">Insights and advice for crafting successful research proposals.</p>
+          <a href="/blog/fellowship-tips" class="text-blue-600 inline-flex items-center">Read More <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
