@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Alex Johnson</title>
+  <title>Sebastian G. Gruber</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -12,8 +12,8 @@
     <section class="text-center space-y-4">
       <div class="flex flex-col items-center space-y-4">
         <img src="profile.jpg" alt="Dr. Alex Johnson" class="w-32 h-32 rounded-full object-cover border-4 border-gray-300">
-        <h1 class="text-4xl font-bold">Dr. Alex Johnson</h1>
-        <p class="text-lg text-gray-600">Postdoctoral Researcher in Computational Biology at XYZ University</p>
+        <h1 class="text-4xl font-bold">Sebastian G. Gruber</h1>
+        <p class="text-lg text-gray-600">Postdoctoral Researcher in Uncertainty Quantification at KU Leuven</p>
         <div class="flex justify-center gap-4 flex-wrap">
           <a href="mailto:alex@example.com" class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i> Contact</a>
           <a href="Alex_Johnson_CV.pdf" download class="border px-4 py-2 rounded hover:bg-gray-100 flex items-center"><i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Download CV</a>
@@ -26,47 +26,72 @@
     <section class="space-y-4">
       <h2 class="text-2xl font-semibold">About Me</h2>
       <p>
-        I am a computational biologist with a strong interest in using data-driven
-        approaches to understand complex biological systems. My current research
-        focuses on transcriptomic analysis and machine learning applications in
-        genomics.
+        I am a computer scientist (PhD) and statistician (MSc) with a strong interest in using theoretically grounded
+        approaches to understand the uncertainty of machine learning predictions. My current research
+        focuses on the calibration of predicted probabilities and a probabilistic perspective of generative modelling (such as large language models).
+        My current affiliation is the PSI division in the ESAT department of KU Leuven under the supervision of Prof. Matthew Blaschko.
       </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold">Research Interests</h2>
+      <ul class="list-disc list-inside">
+        <li>Uncertainty calibration</li>
+        <li>Proper scoring rules (a.k.a. proper scores or proper losses) and Bregman divergences</li>
+        <li>Uncertainty quantification of generative models (such as diffusion models or LLMs)</li>
+        <li>Kernel methods</li>
+        <li>Applications, where reliable uncertainties are key</li>
+      </ul>
     </section>
 
     <section class="space-y-4">
       <h2 class="text-2xl font-semibold">Publications</h2>
       <ul class="space-y-2">
         <li class="border rounded p-4">
-          Johnson, A. et al. (2024). "Machine learning approaches to gene expression analysis." <em>Bioinformatics Journal</em>.
+          Gruber, S. G., & Bach, F. (2025). "Optimizing Estimators of Squared Calibration Errors in Classification". <em>TMLR</em>.
         </li>
         <li class="border rounded p-4">
-          Johnson, A. et al. (2023). "Integrative transcriptomics in cancer research." <em>Nature Genetics</em>.
+          Gruber, S. G., Ziegler, P. T., & Buettner, F. "Disentangling Mean Embeddings for Better Diagnostics of Image Generators". <em>IAI Workshop @ NeurIPS</em>.
+        </li>
+        <li class="border rounded p-4">
+          Gruber, S. G., Popordanoska, T., Tiulpin, A., Buettner, F., & Blaschko, M. B. (2024). "Consistent and asymptotically unbiased estimation of proper calibration errors". <em>AISTATS</em>.
+        </li>
+        <li class="border rounded p-4">
+          Gruber, S. G., & Buettner, F. "A Bias-Variance-Covariance Decomposition of Kernel Scores for Generative Models". <em>ICML</em>.
+        </li>
+        <li class="border rounded p-4">
+          Gruber, S., & Buettner, F. (2023). "Uncertainty Estimates of Predictions via a General Bias-Variance Decomposition. <em>AISTATS</em>.
+        </li>
+        <li class="border rounded p-4">
+          Gruber, S., & Buettner, F. (2022). "Better uncertainty calibration via proper scores for classification and beyond". <em>NeurIPS</em>.
+        </li>
+        <li class="border rounded p-4">
+          Tomani, C., Gruber, S., Erdem, M. E., Cremers, D., & Buettner, F. (2021). "Post-hoc uncertainty calibration for domain drift scenarios". <em>CVPR</em>.
         </li>
       </ul>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold">Research Interests</h2>
-      <ul class="list-disc list-inside">
-        <li>Transcriptomics & Gene Regulation</li>
-        <li>Machine Learning in Biology</li>
-        <li>Cancer Genomics</li>
-        <li>Computational Method Development</li>
+      <h2 class="text-2xl font-semibold">Patents</h2>
+      <ul class="space-y-2">
+        <li class="border rounded p-4">
+          Büttner, Florian, and Sebastian Gruber. "Post-processing output data of a classifier." <em>U.S. Patent Application No. 17/347,645</em>.
+        </li>
       </ul>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold">Interactive Projects</h2>
+      <h2 class="text-2xl font-semibold">Open Source Projects</h2>
       <div class="grid md:grid-cols-2 gap-4">
         <div class="border rounded p-4 space-y-2">
-          <h3 class="text-xl font-medium">Gene Expression Explorer</h3>
-          <p>Visualize gene expression across datasets using dynamic filtering and PCA plots.</p>
-          <a href="/projects/gene-expression" class="text-blue-600 inline-flex items-center">Launch App <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+          <h3 class="text-xl font-medium">mlrPlayground</h3>
+          <p>Interactive visualisation of various machine learning algorithms on toy datasets.</p>
+          <a href="https://sebastian-gruber.shinyapps.io/mlrPlayground/" class="text-blue-600 inline-flex items-center">Launch App <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
         </div>
         <div class="border rounded p-4 space-y-2">
-          <h3 class="text-xl font-medium">Cancer Pathway Mapper</h3>
-          <p>Interactive pathway analysis tool for cancer gene sets.</p>
-          <a href="/projects/cancer-mapper" class="text-blue-600 inline-flex items-center">Explore Tool <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
+          <h3 class="text-xl font-medium">mlr3hyperband</h3>
+          <p>Hyperparameter optimization package within the mlr3 (machine learning in R) eco-system.</p>
+          <a href="https://mlr3hyperband.mlr-org.com/" class="text-blue-600 inline-flex items-center">Explore Package <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
         </div>
       </div>
     </section>
@@ -75,15 +100,9 @@
       <h2 class="text-2xl font-semibold">Blog</h2>
       <ul class="space-y-2">
         <li class="border rounded p-4">
-          <h3 class="text-lg font-medium">How Machine Learning is Shaping Genomics</h3>
-          <p class="text-sm text-gray-600">June 10, 2025</p>
-          <p class="mt-2">An overview of recent trends in applying ML to biological datasets.</p>
-          <a href="/blog/ml-in-genomics" class="text-blue-600 inline-flex items-center">Read More <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
-        </li>
-        <li class="border rounded p-4">
-          <h3 class="text-lg font-medium">Tips for Writing a Research Fellowship Proposal</h3>
+          <h3 class="text-lg font-medium"></h3>
           <p class="text-sm text-gray-600">May 25, 2025</p>
-          <p class="mt-2">Insights and advice for crafting successful research proposals.</p>
+          <p class="mt-2">Nothing here yet.</p>
           <a href="/blog/fellowship-tips" class="text-blue-600 inline-flex items-center">Read More <i data-lucide="external-link" class="ml-1 w-4 h-4"></i></a>
         </li>
       </ul>
